@@ -17,4 +17,12 @@ The table below describes the order of rules applied during BGP decision process
 
 ### Problem of Convergence :
 
+As we could observe BGP decision process is a complex we limit this project to reduce BGP convergence time considering only AS_Path attribute. Based on AS_Path attribute there are 4 possible routing events.
 
+* Route which was previously unavailable is available after a network repair.
+* Route which is previously available is not available.
+* Route which was previously available has an increased cost
+* Route which was previously available has a decreased cost.
+
+Whenever a BGP router receives one of the above annoucement for a path to a destination prefix, the router could change its routing information base based on this annoucement. After changing its routing information base, the router advertise
+the changed route to its peers and this process goes on until every router reaches stable state.
