@@ -20,7 +20,7 @@ The table below describes the order of routing decisions applied during BGP deci
 As we could observe BGP decision process is complex. We try to understand problem of convergence considering only AS_Path attribute. AS_path attribute of already advertized route could be changed by 4 possible routing events
 
 * Route which was previously unavailable is available after a network repair.
-* Route which is previously available is not available.
+* Route which was previously available is not available.
 * Route which was previously available has an increased cost
 * Route which was previously available has a decreased cost.
 
